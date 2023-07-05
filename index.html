@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>11dars</title>
+   <!-- STYLES  -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<main>
+   <section class="intro-section py-5 text-center ">
+      <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#userModal">
+         Add User
+      </button>
+      <div class="container">
+         <h1 class="display-2 text-success fw-bold">Users Website</h1>
+      </div>
+   </section>
+   <section class="hero-section">
+      <div class="container">
+         <div class="cards-container d-flex flex-wrap gap-3">
+
+         </div>
+      </div>
+   </section>
+</main>
+<!-- Modal -->
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add new user</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <form>
+               <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input id="fullName" class="form-control" type="text" required>
+               </div>
+               <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input id="email" class="form-control" type="email" required>
+               </div>
+               <div class="mb-3">
+                  <label for="dob" class="form-label">Date of birthday:</label>
+                  <input id="dob" class="form-control" type="date" required>
+               </div>
+               <div class="mb-3">
+                  <label for="city" class="form-label">City:</label>
+                  <input id="city" class="form-control" type="text" required>
+               </div>
+               <div class="mb-3">
+                  <label for="picture-url" class="form-label">Picture url:</label>
+                  <input id="picture-url" class="form-control" type="url" required>
+               </div>
+               <div class="text-end">
+                  <button class="btn btn-primary px-3" data-bs-dismiss="modal">Save</button>
+                  <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">
+                     Close
+                  </button>
+               </div>
+            </form>
+         </div>
+         <!-- <div class="modal-footer">
+
+         </div> -->
+      </div>
+   </div>
+</div>
+
+<body>
+   <!-- JS  -->
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/app.js"></script>
+</body>
+
+</html>
